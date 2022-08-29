@@ -60,7 +60,7 @@ function Menu() {
 
         itemWrapper.appendChild(itemPrice.cloneNode(true))
 
-        itemWrapper.addEventListener("mouseover", () => image.setAttribute("src", `assets/${menuArray[i].id}.jpg`) )
+        itemWrapper.addEventListener("mouseover", () => image.setAttribute("src", `../src/assets/${menuArray[i].id}.jpg`) )
 
         menu.appendChild(itemWrapper)
 

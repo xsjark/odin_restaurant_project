@@ -12,7 +12,7 @@ function Contact() {
     element.setAttribute("id", "content-container");
   
     image.classList.add("fit-image");
-    image.setAttribute("src", "assets/map.png");
+    image.setAttribute("src", "../src/assets/map.png");
 
     leftDiv.setAttribute("id", "content-left")
     leftDiv.appendChild(image)
