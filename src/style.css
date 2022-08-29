@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: "Vollkorn";
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5874em;
+}
+
+h3 {
+	font-size: 1.2599em;
+}
+
+p {
+	font-size: 1em;
+}
+
+small {
+	font-size: .7937em;
+}
+
+#container {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 80px auto 60px;
+	gap: 24px;
+	margin: 0 60px;
+}
+
+#header {
+	grid-column: 1 / 2;
+	grid-row: 1/2;
+}
+
+#header-title {
+	grid-column: 2 / 3;
+	grid-row: 1/2;
+	display: grid;
+	align-items: center;
+}
+
+#home {
+	grid-column: 10 / 11;
+	grid-row: 1/2;
+	display: grid;
+	align-items: center;
+}
+
+#menu {
+	grid-column: 11 / 12;
+	grid-row: 1/2;
+	display: grid;
+	align-items: center;
+}
+
+#contact {
+	grid-column: 12 / 13;
+	grid-row: 1/2;
+	display: grid;
+	align-items: center;
+}
+
+#content {
+	grid-column: 1/13;
+}
+
+#content-container {
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px
+}
+#content-left {
+	height: 100%;
+}
+#content-right {
+	padding: 32px 16px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 100px
+}
+
+#menu-card {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.item-wrapper {
+	display: flex;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+.item-wrapper:hover {
+	cursor: pointer;
+	background-color: beige;
+}
+
+#contact-details {
+	display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.fit-image {
+	max-width: 100%;
+	aspect-ratio: 1;
+	object-fit: contain;
+}
+
+.nav {
+	cursor: pointer;
+}
+
+.nav:hover {
+	text-decoration: underline;
+}
+
+#footer {
+	grid-row: 3/4;
+	grid-column: 1/13;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
