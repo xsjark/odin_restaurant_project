@@ -1,3 +1,5 @@
+import Map from "./assets/map.png"
+
 function Contact() {
     const element = document.createElement("div");
     const details = document.createElement("div");
@@ -12,7 +14,7 @@ function Contact() {
     element.setAttribute("id", "content-container");
   
     image.classList.add("fit-image");
-    image.setAttribute("src", "../src/assets/map.png");
+    image.src = Map
 
     leftDiv.setAttribute("id", "content-left")
     leftDiv.appendChild(image)

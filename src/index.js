@@ -2,6 +2,7 @@ import "./style.css";
 import Menu from "./Menu";
 import Contact from "./Contact";
 import "@fontsource/vollkorn";
+import HomeImage from "./assets/home.jpg"
 
 function Home() {
   const element = document.createElement("div");
@@ -14,7 +15,7 @@ function Home() {
     element.setAttribute("id", "content-container");
   
     image.classList.add("fit-image");
-    image.setAttribute("src", "../src/assets/home.jpg");
+    image.src = HomeImage;
 
     leftDiv.setAttribute("id", "content-left")
     leftDiv.appendChild(image)

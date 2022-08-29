@@ -1,21 +1,25 @@
+import ShoyuRamen from "./assets/shoyuramen.jpg"
+import Kaisendon from "./assets/kaisendon.jpg"
+import Katsudon from "./assets/katsudon.jpg"
+
 const menuArray = [
     {
         name: "Shoyu Ramen",
         description: "Emerging carefully curated cutting-edge, Nordic Muji hand-crafted joy global perfect Boeing 787 sophisticated Ettinger tote bag eclectic lovely",
         price: "$3.50",
-        id: "shoyuramen"
+        id: ShoyuRamen
     },
     {
         name: "Kaisendon",
         description: "Exquisite Airbus A380 elegant ANA. Singapore Comme des Garçons essential Washlet charming.",
         price: "$2.50",
-        id: "kaisendon"
+        id: Kaisendon
     },
     {
         name: "Katsudon",
         description: "Ryokan Airbus A380 liveable smart, espresso Shinkansen joy Lufthansa Fast Lane Washlet.",
         price: "$1.50",
-        id: "katsudon"
+        id: Katsudon
     }
 ]
 function Menu() {
@@ -33,7 +37,8 @@ function Menu() {
     element.setAttribute("id", "content-container");
   
     image.classList.add("fit-image");
-    image.setAttribute("src", "/src/assets/shoyuramen.jpg");
+    image.src = ShoyuRamen;
+
 
     leftDiv.setAttribute("id", "content-left")
     leftDiv.appendChild(image)
@@ -60,7 +65,7 @@ function Menu() {
 
         itemWrapper.appendChild(itemPrice.cloneNode(true))
 
-        itemWrapper.addEventListener("mouseover", () => image.setAttribute("src", `../src/assets/${menuArray[i].id}.jpg`) )
+        itemWrapper.addEventListener("mouseover", () => image.src = menuArray[i].id )
 
         menu.appendChild(itemWrapper)
 
