@@ -14,7 +14,7 @@ function Home() {
     element.setAttribute("id", "content-container");
   
     image.classList.add("fit-image");
-    image.setAttribute("src", "assets/home.jpg");
+    image.setAttribute("src", "~/assets/home.jpg");
 
     leftDiv.setAttribute("id", "content-left")
     leftDiv.appendChild(image)
