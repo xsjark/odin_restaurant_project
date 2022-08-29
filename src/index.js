@@ -2,6 +2,7 @@ import "./style.css";
 import Menu from "./Menu";
 import Contact from "./Contact";
 import "@fontsource/vollkorn";
+import LogoSVG from "./assets/logo.svg"
 import HomeImage from "./assets/home.jpg"
 
 function Home() {
@@ -39,6 +40,7 @@ const changeTab = (foo) => {
   console.log("changed")
 }
 
+document.getElementById("logo").src = LogoSVG
 const content = document.getElementById("content");
 content.appendChild(Home());
 document.getElementById("home").addEventListener("click",() => changeTab(Home))
