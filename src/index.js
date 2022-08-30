@@ -37,8 +37,7 @@ function Home() {
 
 const loadContent = (foo) => {
   const content = document.getElementById("content");
-  content.innerHTML = "";
-  content.appendChild(foo());
+  content.replaceChildren(foo())
 };
 
 document.getElementById("logo").src = LogoSVG;
