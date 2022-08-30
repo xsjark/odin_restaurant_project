@@ -11,20 +11,20 @@ function Contact() {
     const phone = document.createElement("p");
     const email = document.createElement("p");
     
-    element.setAttribute("id", "content-container");
+    element.id = "content-container";
   
     image.classList.add("fit-image");
     image.src = Map
 
-    leftDiv.setAttribute("id", "content-left")
+    leftDiv.id = "content-left"
     leftDiv.appendChild(image)
 
     header.textContent = "Location"
     
-    rightDiv.setAttribute("id", "content-right")
+    rightDiv.id = "content-right"
     rightDiv.appendChild(header)
 
-    details.setAttribute("id", "contact-details")
+    details.id = "contact-details"
 
     address.innerText = "335 Central Ave, Albany, North Dakota, 12206";
     phone.innerText = "123 456 7890";
